@@ -1,0 +1,90 @@
+body {
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #00b0ff; /* Azul claro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], 
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    outline: none;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    border-color: #00b0ff; /* Resalta azul */
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00b0ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0091ea; /* Azul más oscuro */
+    transform: scale(1.05); /* Efecto de agrandado */
+}
+
+.register-link {
+    display: block;
+    margin-top: 15px;
+    color: #00b0ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register-link:hover {
+    color: #0091ea;
+}
+
+.onix-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px; /* Ajusta el tamaño según tus necesidades */
+    font-weight: 600; /* Para un estilo más destacado */
+    color: #007bff; /* El color azul que estás usando */
+    text-align: center;
+    margin-bottom: 20px; /* Para dar espacio entre el texto y el contenedor */
+}
+
+.no-disponible {
+    color: red;
+    font-family: 'Inter', sans-serif;
+}
+
+.container .error-message.no-disponible {
+    color: red;
+    font-family: 'Inter', sans-serif;
+}
